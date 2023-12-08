@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <script src="https://kit.fontawesome.com/8085d71614.js" crossorigin="anonymous"></script>
+    <head>
+      <link rel="icon" href="assests/images/calci.png"type="image/x-icon">
+ 
+        <title>DSpk</title>
+    </head>
+    <body class="light-mode">
+      <div class="lgpos">
+        <button class="btn" onclick="darkMode()" id="moon"><i class="fa-solid fa-moon mn"></i></i></button>
+        <button class="btn" onclick="lightMode()" id="sun" style="display: none;"><i class="fa-solid fa-sun su"></i></button>
+      </div>
+     
+        <section id="header">
+       
+          <div class="text-center title">DSpk</div>
+                    <div class="container calculator mt-0 bxt mt-3" id="bxid">                
+                      <div class="row">
+                        <input type="text" class="form-control calculator__output bm" placeholder="0" id="txt" disabled> 
+                          <div class="col calculator__keys bm">                         
+                            <button class="1 btn calculator__key" onclick="txt.value+='1'" value="1">1</button>
+                            <button class="1 btn calculator__key" onclick="txt.value+='2'">2</button>
+                            <button class="1 btn calculator__key" onclick="txt.value+='3'" value="3">3</button>
+                            <button class="1 btn  calculator__key--operator" onclick="txt.value+='+'">+</button>
+                          </div>
+                          </div>
+                          <div class="row ">
+                          <div class="col calculator__keys bm">
+                            <button class="1 btn calculator__key" onclick="txt.value+='4'" value="4">4</button>
+                            <button class="1 btn calculator__key" onclick="txt.value+='5'">5</button>
+                            <button class="1 btn calculator__key" onclick="txt.value+='6'" value="6">6</button>
+                            <button class="1 btn  calculator__key--operator" onclick="txt.value+='-'">-</button>
+                          </div>
+                        </div>
+                        <div class="row  ">
+                          <div class="col calculator__keys bm">
+                              <button class="1 btn calculator__key" onclick="txt.value+='7'" value="7">7</button>
+                            <button class="1 btn calculator__key" onclick="txt.value+='8'">8</button>
+                            <button class="1 btn calculator__key" onclick="txt.value+='9'" value="9">9</button>
+                            <button class="1  calculator__key--operator" onclick="txt.value+='*'">*</button>
+                          </div>
+                          </div>
+                          <div class="row ">
+                            <div class="col calculator__keys bm">
+                              <button class="1 btn calculator__key" onclick="txt.value+='.'" value=".">.</button>
+                            <button class="1 btn calculator__key" onclick="txt.value+='0'">0</button>
+                            <button class="1 btn calculator__key" onclick="txt.value+='00'">00</button>
+                            <button class="1 btn calculator__key--operator" onclick="txt.value+='/'" value="/">/</button>
+                              
+                            </div>
+                        </div>
+                        <div class="row ">
+                        <div class="col calculator__keys bm">
+                        <button class="1 btn calculator__key--operator" value="Clear All" onclick="txt.value=''">AC</button>
+                        
+                        <button type="button" class="btn btn-success btt"id="spk"><i class="fa-solid fa-volume-high"></i></button>
+                        <button class="1 btn calci" onclick="txt.value = eval(txt.value)" id="ans">=</button>
+                      </div>
+                    </div>
+                    </div>
+        </section>
+        <section id="footer">
+          <div class="text-center mt-5 foot">Made by Karan &#x2764;</div>
+        </section>
+        <script src="./assests/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </body>
+</html>
