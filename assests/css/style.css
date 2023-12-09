@@ -147,7 +147,7 @@
     font-family: 'Whisper', cursive;
     font-weight: 600;
   }
-  @media (   max-width:400px) {
+  @media (max-width:400px) {
     #header{
       width: 21rem;
       margin: -12px;
